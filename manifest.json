@@ -1,7 +1,7 @@
 {
     "name": "Materialize Start",
     "short_name": "Start Test",
-    "start_url": "/?utm_source=homescreen",
+    "start_url": "test_start_materialize.html",
     "background_color": "#2196F3",
     "theme_color": "#2196F3",
     "display": "standalone",
