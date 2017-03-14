@@ -62,3 +62,7 @@
 .demo-footer .mdl-mini-footer--link-list a {
   font-size: 13px;
 }
+
+img {
+  width: 100%;
+}
