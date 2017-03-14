@@ -11,6 +11,7 @@ self.addEventListener('install', function(event) {
       return cache.addAll(CACHED_URLS);
     })
   );
+});
 
 
 self.addEventListener('fetch', function(event) {
