@@ -3,7 +3,7 @@ var CACHED_URLS = [
   'offline.html',
   'mystyles.css',
   'styles.css',
-  'jack.jpg',
+  'paddy.jpg',
   'dino.png'
 ];
 
