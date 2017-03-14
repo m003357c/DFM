@@ -2,6 +2,8 @@ var CACHE_NAME = 'gih-cache';
 var CACHED_URLS = [
   'offline.html',
   'mystyles.css',
+  'styles.css',
+  'jack.jpg',
   'dino.png'
 ];
 
