@@ -6,7 +6,7 @@ var CACHED_URLS = [
     'min-style.css',
     'styles.css',
   // JavaScript
-    'maifest.json',
+    'manifest.json',
     'material.js',
   // Images
     'appimages/paddy.jpg',
