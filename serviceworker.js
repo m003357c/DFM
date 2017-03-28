@@ -1,21 +1,22 @@
 var CACHE_NAME = 'gih-cache-v5';
+var BASEPATH = '/DFM/';
 var CACHED_URLS = [
   // Our HTML
-  'first.html',
+    BASEPATH + 'first.html',
   // Stylesheets and fonts    
-    'min-style.css',
-    'styles.css',
+    BASEPATH +  'min-style.css',
+    BASEPATH +  'styles.css',
   // JavaScript
-    'manifest.json',
-    'material.js',
+    BASEPATH +  'manifest.json',
+    BASEPATH +  'material.js',
   // Images
-    'appimages/paddy.jpg',
-    'eventsimages/example-work01.jpg',
-    'eventsimages/example-work02.jpg',
-    'eventsimages/example-work03.jpg',
-    'eventsimages/example-work04.jpg',
-    'eventsimages/example-work07.jpg',
-    'eventsimages/example-work08.jpg',
+    BASEPATH + 'appimages/paddy.jpg',
+    BASEPATH +  'eventsimages/example-work01.jpg',
+    BASEPATH + 'eventsimages/example-work02.jpg',
+    BASEPATH +  'eventsimages/example-work03.jpg',
+    BASEPATH + 'eventsimages/example-work04.jpg',
+    BASEPATH +  'eventsimages/example-work07.jpg',
+    BASEPATH +  'eventsimages/example-work08.jpg',
 ];
 
 self.addEventListener('install', function(event) {
@@ -29,7 +30,7 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('fetch', function(event) {
   var requestURL = new URL(event.request.url);
-  if (requestURL.pathname === 'first.html') {
+  if (requestURL.pathname === BASEPATH + 'first.html') {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
         return cache.match('first.html').then(function(cachedResponse) {
@@ -43,7 +44,7 @@ self.addEventListener('fetch', function(event) {
     );
   } else if (
     CACHED_URLS.includes(requestURL.href) ||
-    CACHED_URLS.includes(requestURL.pathname) {
+    CACHED_URLS.includes(requestURL.pathname)) {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
         return cache.match(event.request).then(function(response) {
