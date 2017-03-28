@@ -17,6 +17,7 @@ var CACHED_URLS = [
     BASEPATH + 'eventsimages/example-work04.jpg',
     BASEPATH +  'eventsimages/example-work07.jpg',
     BASEPATH +  'eventsimages/example-work08.jpg',
+    'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en'
 ];
 
 self.addEventListener('install', function(event) {
