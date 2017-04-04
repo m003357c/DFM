@@ -40,7 +40,7 @@
 <meta name="theme-color" content="#db5945"> 
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-red.min.css">
+    <link rel="stylesheet" href="min-style.css">
     <link rel="stylesheet" href="styles.css">
 
   </head>
@@ -60,7 +60,7 @@
            
             <h3>Test Page</h3>
               <p>
-                <img src="jack.jpg" alt="Jack cat" />
+                <img id="mainImg" src="appimages/jack.jpg" alt="Jack cat" />
                 <a href="first.html">first</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim venenatis consequat. Praesent quis odio a neque venenatis ornare. Nam vel sem sed magna porttitor ultrices. Nunc nec turpis vitae lacus efficitur pulvinar in id nibh. Praesent sed mi vel ipsum faucibus ultrices iaculis eget dui. Praesent ultricies velit vel vestibulum convallis. Praesent accumsan luctus sem, at consectetur erat convallis pretium. Nunc pulvinar nec nibh a mollis. Donec a metus in sapien sollicitudin fermentum vitae eu eros.
               </p>
               <p>
@@ -69,16 +69,43 @@
               <p>
                 Tempor tempor aliqua in commodo cillum Lorem magna dolore proident Lorem. Esse ad consequat est excepteur irure eu irure quis aliqua qui. Do mollit esse veniam excepteur ut veniam anim minim dolore sit commodo consequat duis commodo. Sunt dolor reprehenderit ipsum minim eiusmod eu consectetur anim excepteur eiusmod. Duis excepteur anim dolor sit enim veniam deserunt anim adipisicing Lorem elit. Cillum sunt do consequat elit laboris nisi consectetur.
               </p>
-            <h3>Sub Title</h3>
+
+            <h3>Ask Jack</h3>
+            <form id="askJackForm">
               <p>
-                Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
+                <label for="name">Name: </label>
+                <input name="name" />
               </p>
+
               <p>
-                Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
+                <label for="email">Email: </label>
+                <input name="email" type="email" />
               </p>
-  
+
+              <p>
+                <label for="question">Question: </label>
+                <input name="question" />
+              </p>
+
+              <p>
+                <input type="submit" value="Ask" />
+              </p>
+            </form>
+
+            <p>
+              Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
+            </p>
+            <p>
+              Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
+            </p>
+
           </div>
         </div>
+
+        <div id="news" class="mdl-grid portfolio-max-width">
+            <p>Refresh (or enable Javascript) to view live news.</p>
+        </div>
+
         <footer class="demo-footer mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             <ul class="mdl-mini-footer--link-list">
@@ -90,6 +117,7 @@
         </footer>
       </main>
     </div>
-       <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="material.js"></script>
+    <script src="scripts.js"></script> 
   </body>
 </html>
