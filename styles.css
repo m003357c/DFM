@@ -225,3 +225,12 @@ img.article-image {
 #mainImg {
   width: 100%;
 }
+
+#map-container.offline-map {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: url('appimages/offlinemap.jpg');
+}
