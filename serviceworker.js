@@ -70,6 +70,19 @@ self.addEventListener('fetch', function(event) {
         });
       })
     );
+   } else if (requestURL.pathname === BASE_PATH + 'second.html') {
+event.respondWith(
+  caches.open(CACHE_NAME).then(function(cache) {
+    return cache.match('second.html').then(function(cachedResponse) {
+      var fetchPromise = fetch('second.html').then(function(networkResponse) {
+        cache.put('second.html', networkResponse.clone());
+        return networkResponse;
+      });
+      return cachedResponse || fetchPromise;
+    });
+  })
+);
+
  // Handle requests for Google Maps JavaScript API file
   } else if (requestURL.href === googleMapsAPIJS) {
     event.respondWith(
